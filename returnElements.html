@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returning n elements</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; background: lightblue;">Open console to see the output</h1>
+    <script>
+        function subArray(arr, n) {
+            let resultantArray = [];
+            if (arr.length - 1 > n) {
+                for (let i = arr.length - n; i < arr.length; i++) {
+                    let x = arr[i];
+                    resultantArray.push(x);
+                }
+                console.log(`[${resultantArray}]`)
+            }
+            else {
+                console.log(`[${arr}]`)
+            }
+        }
+        subArray([1, 2, 3, 4, 5], 2);
+        subArray([1, 2, 3], 6);
+    </script>
+</body>
+
+</html>

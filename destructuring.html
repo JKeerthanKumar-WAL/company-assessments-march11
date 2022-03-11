@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; background: lightblue;">Open console to see the output</h1>
+    <script>
+        const numbersArray = ['apple', 'orange', 'peach'];
+        const [fruitOne, fruitTwo, fruitThree] = numbersArray;
+        console.log(fruitOne);
+        console.log(fruitTwo);
+        console.log(fruitThree);
+        const person = { name: 'abcde', age: 10, gender: 'm' };
+        const { name: personName, age: personAge } = person;
+        console.log(personName);
+        console.log(personAge);
+    </script>
+</body>
+
+</html>

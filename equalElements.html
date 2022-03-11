@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All elements are equal</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; background: lightblue;">Open console to see the output</h1>
+    <script>
+        function areAllEqual(arr) {
+            let f = 1;
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[0] != arr[i]) {
+                    f = 0;
+                    break;
+                }
+            }
+            if (f) {
+                console.log("true")
+            }
+            else {
+                console.log("false")
+            }
+        }
+        areAllEqual(['test', 'test', 'test']);
+        areAllEqual([1, 1, 1, 2]);
+    </script>
+</body>
+
+</html>

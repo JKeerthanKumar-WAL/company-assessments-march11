@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number in the array</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; background: lightblue;">Open console to see the output</h1>
+    <script>
+        function largestNumber(numArray) {
+            let temp = numArray[0];
+            for (let i = 1; i < numArray.length; i++) {
+                if (numArray[i] > temp) {
+                    temp = numArray[i];
+                }
+            }
+            console.log(temp)
+        }
+        let numArrayOne = [1, 5, 7, 9];
+        largestNumber(numArrayOne);
+        let numArrayTwo = [-1, -5, 0, -100];
+        largestNumber(numArrayTwo);
+    </script>
+</body>
+
+</html>
